@@ -8,7 +8,7 @@ import dash_bootstrap_components as dbc
 dash.register_page(__name__, path='/')
 
 layout = html.Div([
-    html.H1("Livres", style={'textAlign': 'center', 'text-decoration' : 'underline overline #2c5f4d'}),
+    html.H1("Books", style={'textAlign': 'center', 'text-decoration' : 'underline overline #2c5f4d'}),
     dbc.Row([dbc.Col([dbc.Row(dcc.Input(id='author', type='text', placeholder='Authors name'),
                               style={'margin-top': '40px', 'margin-bottom' : '40px'}),
                       dbc.Row(dcc.Input(id='pages', type="number",
